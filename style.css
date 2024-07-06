@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  background: linear-gradient();
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(5, 158, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(5, 158, 36, 1) 0%,
+    rgba(131, 255, 169, 1) 100%
+  );
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5%;
+  width: 80%;
+  flex-wrap: wrap;
+
+  background: white;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 10px;
+  gap: 2.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: green;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  column-gap: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: green;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+legend {
+  margin-bottom: 1rem;
+}
+.radio-group label {
+  margin-right: 1rem;
+}
+
+.age-selection fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+.age-selection legend {
+  padding: 0 10px;
+  font-weight: bold;
+}
+.age-selection label {
+  display: block;
+  margin: 10px 0;
+}
+.age-selection input[type="radio"] {
+  margin-right: 10px;
+  font-weight: 500;
+}
+.age-selection .radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.age-selection .radio-group div {
+  width: 45%;
+}
+
+button {
+  width: 100%;
+  background: green;
+  border-radius: 6px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 890px) {
+  .form {
+    height: 660px;
+    column-gap: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+    width: 48%;
+  }
+
+  .age-selection {
+    /* border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1rem; */
+    width: 48%;
+  }
+}
